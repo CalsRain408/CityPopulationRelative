@@ -1,17 +1,26 @@
-environment of this experiment is as follows:
-Linux operating system: Ubuntu 24.04.2
+# Environment 
+Linux operating system: Ubuntu 24.04.2   
+
+
 Java operating environment: JDK 17
+
+
 Hadoop version: 3.4.1
+
+
 Maven version: 3.8.7
+
+
 IDE: IntelliJ IDEA
 
+# Dataset
 The City-simple.tsv file contains data harvested from Wikipedia concerning cities around the world. The file contains one line per city, and seven tab-separated fields per line
 
 
 These fields are the URI (unique identifier) of the city, its name, the name of the country it is in, the URI of the country, the city population, and its latitude and longitude. This experiment will use the small dataset to work out the urban population of each country in the dataset.
 Before writing the code, we will answer the following questions and write a pseudocode detailing the map and reduce methods.
 
-
+# Content
 1. What part of the MapReduce system will do the grouping of records by country?
 The Shuffle and Sort phase of MapReduce automatically handles the grouping. This is the intermediate phase between the Map and Reduce stages that:
 i.	Collects all key-value pairs from the mappers.
